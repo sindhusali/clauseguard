@@ -1,9 +1,23 @@
+# Core ML / fine-tuning (Week 1)
 datasets>=2.19.0
 transformers>=4.41.0
 peft>=0.11.0
 accelerate>=0.30.0
 scikit-learn>=1.4.0
 pandas>=2.2.0
+torch>=2.2.0
 pypdf>=4.2.0
+
+# RAG / vector store (Week 1-2)
 chromadb>=0.5.0
 sentence-transformers>=2.7.0
+
+# LLM API + config (Week 2)
+groq>=0.11.0
+python-dotenv>=1.0.0
+
+# Evaluation harness (Week 3)
+sentencepiece>=0.2.0
+
+# Dashboard (Week 4)
+streamlit>=1.35.0
