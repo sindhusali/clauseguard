@@ -1,7 +1,7 @@
 """
-ClauseGuard — Step 4
-Embed clause chunks into ChromaDB for retrieval.
-Runs locally.
+ClauseGuard — Step 4 (updated)
+Embed clause chunks into ChromaDB, now also storing the verified clause_number
+(from the updated pdf_chunking.py) as metadata, not just the page number.
 """
 
 import json
@@ -30,8 +30,13 @@ def index_chunks(collection, chunks_json_path, contract_id):
         ids=[f"{contract_id}_{c['chunk_id']}" for c in chunks],
         documents=[c["text"] for c in chunks],
         metadatas=[
-            {"contract_id": contract_id, "page_number": c["page_number"],
-             "paragraph_index_on_page": c["paragraph_index_on_page"]}
+            {
+                "contract_id": contract_id,
+                "page_number": c["page_number"],
+                "paragraph_index_on_page": c["paragraph_index_on_page"],
+                # Chroma metadata can't store None, so use 0 as "no clause number"
+                "clause_number": c.get("clause_number") if c.get("clause_number") is not None else 0,
+            }
             for c in chunks
         ],
     )

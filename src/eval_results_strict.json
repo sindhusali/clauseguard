@@ -1,0 +1,519 @@
+{
+  "mode": "strict",
+  "run_at": "2026-07-07T15:57:51.480075",
+  "total_answerable_sentences_checked": 35,
+  "hallucinated_sentences": 17,
+  "hallucination_rate": 0.4857,
+  "unanswerable_questions": 20,
+  "correct_declines": 13,
+  "decline_accuracy": 0.65,
+  "per_question": [
+    {
+      "id": "q01",
+      "question": "What is defined as confidential information under this agreement?",
+      "expected": "answerable",
+      "answer": "According to Clause 1 (Page 1), Confidential Information is defined as all information or material that has or could have commercial value or other utility in the business in which the Disclosing Party is engaged. (Page 1)",
+      "total_sentences": 1,
+      "supported": 1,
+      "hallucinated": 0,
+      "skipped_hedges": 0,
+      "detail": [
+        {
+          "sentence": "According to Clause 1 , Confidential Information is defined as all information or material that has or could have commercial value or other utility in the business in which the Disclosing Party is engaged.",
+          "best_label": "entailment",
+          "entailment_score": 0.695
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "question": "What information is excluded from confidential treatment?",
+      "expected": "answerable",
+      "answer": "According to Clause 1 (Page 1), the Receiving Party's obligations under this Agreement do not extend to information that is: \n\n- publicly known at the time of disclosure or subsequently becomes publicly known through no fault of the Receiving Party (page 1, part a). \n- discovered or created by the Receiving Party before disclosure by Disclosing Party (page 1, part b). \n- learned by the Receiving Party through legitimate means other than from the Disclosing Party or Disclosing Party's representatives (page 1, part c). \n- disclosed by Receiving Party with Disclosing Party's prior written approval (page 1, part d).",
+      "total_sentences": 4,
+      "supported": 0,
+      "hallucinated": 4,
+      "skipped_hedges": 0,
+      "detail": [
+        {
+          "sentence": "According to Clause 1 , the Receiving Party's obligations under this Agreement do not extend to information that is: \n\n- publicly known at the time of disclosure or subsequently becomes publicly known through no fault of the Receiving Party (page 1, part a).",
+          "best_label": "neutral",
+          "entailment_score": 0.335
+        },
+        {
+          "sentence": "- discovered or created by the Receiving Party before disclosure by Disclosing Party (page 1, part b).",
+          "best_label": "neutral",
+          "entailment_score": 0.173
+        },
+        {
+          "sentence": "- learned by the Receiving Party through legitimate means other than from the Disclosing Party or Disclosing Party's representatives (page 1, part c).",
+          "best_label": "neutral",
+          "entailment_score": 0.401
+        },
+        {
+          "sentence": "- disclosed by Receiving Party with Disclosing Party's prior written approval (page 1, part d).",
+          "best_label": "neutral",
+          "entailment_score": 0.208
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "question": "What must the receiving party do to protect confidential information?",
+      "expected": "answerable",
+      "answer": "The Receiving Party must hold and maintain the Confidential Information in strictest confidence for the sole and exclusive benefit of the Disclosing Party ((Page 1)). The Receiving Party shall restrict access to Confidential Information to only those employees, contractors, and third parties that are reasonably required, and require those persons to sign nondisclosure restrictions at least as protective as those in this Agreement ((Page 1)).",
+      "total_sentences": 2,
+      "supported": 2,
+      "hallucinated": 0,
+      "skipped_hedges": 0,
+      "detail": [
+        {
+          "sentence": "The Receiving Party must hold and maintain the Confidential Information in strictest confidence for the sole and exclusive benefit of the Disclosing Party ().",
+          "best_label": "entailment",
+          "entailment_score": 0.979
+        },
+        {
+          "sentence": "The Receiving Party shall restrict access to Confidential Information to only those employees, contractors, and third parties that are reasonably required, and require those persons to sign nondisclosure restrictions at least as protective as those in this Agreement ().",
+          "best_label": "entailment",
+          "entailment_score": 0.92
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "question": "Do the nondisclosure obligations survive termination of the agreement?",
+      "expected": "answerable",
+      "answer": "The nondisclosure provisions of this agreement shall survive the termination of this Agreement (Page 1). The duty to hold Confidential Information in confidence shall remain in effect until the Confidential Information no longer qualifies as a trade secret or until Disclosing Party sends Receiving Party written notice releasing Receiving Party from this Agreement, whichever occurs first (Page 1).",
+      "total_sentences": 2,
+      "supported": 1,
+      "hallucinated": 1,
+      "skipped_hedges": 0,
+      "detail": [
+        {
+          "sentence": "The nondisclosure provisions of this agreement shall survive the termination of this Agreement .",
+          "best_label": "entailment",
+          "entailment_score": 0.906
+        },
+        {
+          "sentence": "The duty to hold Confidential Information in confidence shall remain in effect until the Confidential Information no longer qualifies as a trade secret or until Disclosing Party sends Receiving Party written notice releasing Receiving Party from this Agreement, whichever occurs first .",
+          "best_label": "contradiction",
+          "entailment_score": 0.397
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "question": "Does this agreement create a partnership or joint venture between the parties?",
+      "expected": "answerable",
+      "answer": "No, this agreement does not create a partnership or joint venture. According to Clause 5 \u2014 Page 2, \"Nothing contained in this Agreement shall be deemed to constitute either party a partner, joint venture or employee of the other party for any purpose.\" (Page 2).",
+      "total_sentences": 2,
+      "supported": 1,
+      "hallucinated": 1,
+      "skipped_hedges": 0,
+      "detail": [
+        {
+          "sentence": "No, this agreement does not create a partnership or joint venture.",
+          "best_label": "entailment",
+          "entailment_score": 0.984
+        },
+        {
+          "sentence": "According to Clause 5 \u2014 Page 2, \"Nothing contained in this Agreement shall be deemed to constitute either party a partner, joint venture or employee of the other party for any purpose.\" .",
+          "best_label": "neutral",
+          "entailment_score": 0.398
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "question": "What happens if a court finds part of this agreement unenforceable?",
+      "expected": "answerable",
+      "answer": "If a court finds any provision of this Agreement invalid or unenforceable, the remainder of this Agreement shall be interpreted so as best to affect the intent of the parties. (Clause 1, Page 2). Moreover, the failure to exercise any right provided in this Agreement shall not be a waiver of prior or subsequent rights. (Clause 3, Page 2).",
+      "total_sentences": 4,
+      "supported": 4,
+      "hallucinated": 0,
+      "skipped_hedges": 0,
+      "detail": [
+        {
+          "sentence": "If a court finds any provision of this Agreement invalid or unenforceable, the remainder of this Agreement shall be interpreted so as best to affect the intent of the parties.",
+          "best_label": "entailment",
+          "entailment_score": 0.919
+        },
+        {
+          "sentence": "(Clause 1, Page 2).",
+          "best_label": "entailment",
+          "entailment_score": 0.574
+        },
+        {
+          "sentence": "Moreover, the failure to exercise any right provided in this Agreement shall not be a waiver of prior or subsequent rights.",
+          "best_label": "entailment",
+          "entailment_score": 0.493
+        },
+        {
+          "sentence": "(Clause 3, Page 2).",
+          "best_label": "entailment",
+          "entailment_score": 0.558
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "question": "If a party fails to enforce a right under this agreement once, do they lose that right permanently?",
+      "expected": "answerable",
+      "answer": "According to Clause 8 on Page 2 (Waiver), the failure to exercise any right provided in this Agreement shall not be a waiver of prior or subsequent rights. This means the party does not lose the right permanently. (Page 2)",
+      "total_sentences": 2,
+      "supported": 0,
+      "hallucinated": 2,
+      "skipped_hedges": 0,
+      "detail": [
+        {
+          "sentence": "According to Clause 8 on Page 2 (Waiver), the failure to exercise any right provided in this Agreement shall not be a waiver of prior or subsequent rights.",
+          "best_label": "neutral",
+          "entailment_score": 0.046
+        },
+        {
+          "sentence": "This means the party does not lose the right permanently.",
+          "best_label": "neutral",
+          "entailment_score": 0.217
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "question": "Is there any notice regarding immunity for disclosing trade secrets?",
+      "expected": "answerable",
+      "answer": "Yes, there is notice regarding immunity for disclosing trade secrets. This is stated in Clause 1 on Page 2, which grants immunity to individuals who disclose trade secrets to federal, state, or local government officials, attorneys, or in a lawsuit filing under seal. (Page 2)",
+      "total_sentences": 2,
+      "supported": 1,
+      "hallucinated": 1,
+      "skipped_hedges": 0,
+      "detail": [
+        {
+          "sentence": "Yes, there is notice regarding immunity for disclosing trade secrets.",
+          "best_label": "entailment",
+          "entailment_score": 0.926
+        },
+        {
+          "sentence": "This is stated in Clause 1 on Page 2, which grants immunity to individuals who disclose trade secrets to federal, state, or local government officials, attorneys, or in a lawsuit filing under seal.",
+          "best_label": "neutral",
+          "entailment_score": 0.021
+        }
+      ]
+    },
+    {
+      "id": "q21",
+      "question": "Who are the parties entering into this agreement?",
+      "expected": "answerable",
+      "answer": "According to Clause 4, Page 1, the parties entering into this agreement are: \n\n1. Party Disclosing Information (also referred to as the \"Disclosing Party\") located at the mailing address of ______________________________ (no specific address provided).\n2. Party Receiving Information (also referred to as the \"Receiving Party\") located at the mailing address of ______________________________ (no specific address provided).",
+      "total_sentences": 3,
+      "supported": 2,
+      "hallucinated": 1,
+      "skipped_hedges": 0,
+      "detail": [
+        {
+          "sentence": "According to Clause 4, Page 1, the parties entering into this agreement are: \n\n1.",
+          "best_label": "neutral",
+          "entailment_score": 0.323
+        },
+        {
+          "sentence": "Party Disclosing Information (also referred to as the \"Disclosing Party\") located at the mailing address of ______________________________ (no specific address provided).",
+          "best_label": "entailment",
+          "entailment_score": 0.811
+        },
+        {
+          "sentence": "Party Receiving Information (also referred to as the \"Receiving Party\") located at the mailing address of ______________________________ (no specific address provided).",
+          "best_label": "entailment",
+          "entailment_score": 0.599
+        }
+      ]
+    },
+    {
+      "id": "q22",
+      "question": "What kind of relationship does this agreement explicitly say it does NOT create?",
+      "expected": "answerable",
+      "answer": "According to Clause 1 (Page 2), this agreement explicitly states that it does NOT create a relationship where either party is: a partner, joint venture, or employee of the other party for any purpose.",
+      "total_sentences": 1,
+      "supported": 0,
+      "hallucinated": 1,
+      "skipped_hedges": 0,
+      "detail": [
+        {
+          "sentence": "According to Clause 1 , this agreement explicitly states that it does NOT create a relationship where either party is: a partner, joint venture, or employee of the other party for any purpose.",
+          "best_label": "neutral",
+          "entailment_score": 0.092
+        }
+      ]
+    },
+    {
+      "id": "q23",
+      "question": "What is the purpose of the waiver clause in this agreement?",
+      "expected": "answerable",
+      "answer": "The waiver clause, as stated in Clause 1 (Page 2), indicates that failure to exercise any right provided in this Agreement shall not be a waiver of prior or subsequent rights. This implies that the purpose of this clause is to prevent the Receiving Party from losing their rights by not acting on them, allowing them to exercise these rights at a later time (Page 2).",
+      "total_sentences": 2,
+      "supported": 0,
+      "hallucinated": 2,
+      "skipped_hedges": 0,
+      "detail": [
+        {
+          "sentence": "The waiver clause, as stated in Clause 1 , indicates that failure to exercise any right provided in this Agreement shall not be a waiver of prior or subsequent rights.",
+          "best_label": "neutral",
+          "entailment_score": 0.401
+        },
+        {
+          "sentence": "This implies that the purpose of this clause is to prevent the Receiving Party from losing their rights by not acting on them, allowing them to exercise these rights at a later time .",
+          "best_label": "neutral",
+          "entailment_score": 0.016
+        }
+      ]
+    },
+    {
+      "id": "q24",
+      "question": "Does exercising a right once obligate a party to exercise it every time in the future?",
+      "expected": "answerable",
+      "answer": "No, exercising a right once does not obligate a party to exercise it every time in the future (Page 2, Clause 1). The failure to exercise any right provided in this Agreement shall not be a waiver of prior or subsequent rights. (Page 2, Clause 1)",
+      "total_sentences": 3,
+      "supported": 2,
+      "hallucinated": 1,
+      "skipped_hedges": 0,
+      "detail": [
+        {
+          "sentence": "No, exercising a right once does not obligate a party to exercise it every time in the future (Page 2, Clause 1).",
+          "best_label": "entailment",
+          "entailment_score": 0.979
+        },
+        {
+          "sentence": "The failure to exercise any right provided in this Agreement shall not be a waiver of prior or subsequent rights.",
+          "best_label": "entailment",
+          "entailment_score": 0.966
+        },
+        {
+          "sentence": "(Page 2, Clause 1)",
+          "best_label": "neutral",
+          "entailment_score": 0.108
+        }
+      ]
+    },
+    {
+      "id": "q25",
+      "question": "What does the severability clause say happens to the rest of the agreement if one part is invalid?",
+      "expected": "answerable",
+      "answer": "According to Clause 1 (Page 2), if a court finds any provision of this Agreement invalid or unenforceable, \"the remainder of this Agreement shall be interpreted so as best to affect the intent of the parties.\"",
+      "total_sentences": 1,
+      "supported": 0,
+      "hallucinated": 1,
+      "skipped_hedges": 0,
+      "detail": [
+        {
+          "sentence": "According to Clause 1 , if a court finds any provision of this Agreement invalid or unenforceable, \"the remainder of this Agreement shall be interpreted so as best to affect the intent of the parties.\"",
+          "best_label": "neutral",
+          "entailment_score": 0.152
+        }
+      ]
+    },
+    {
+      "id": "q26",
+      "question": "Summarize the receiving party's core obligations regarding confidential information.",
+      "expected": "answerable",
+      "answer": "The Receiving Party shall hold and maintain Confidential Information in strictest confidence (Clause 1 \u2014 Page 1). They shall restrict access to Confidential Information, return any relevant records, and not disclose or use the information without the Disclosing Party's prior written approval (Clause 1 \u2014 Page 1).",
+      "total_sentences": 2,
+      "supported": 2,
+      "hallucinated": 0,
+      "skipped_hedges": 0,
+      "detail": [
+        {
+          "sentence": "The Receiving Party shall hold and maintain Confidential Information in strictest confidence (Clause 1 \u2014 Page 1).",
+          "best_label": "entailment",
+          "entailment_score": 0.806
+        },
+        {
+          "sentence": "They shall restrict access to Confidential Information, return any relevant records, and not disclose or use the information without the Disclosing Party's prior written approval (Clause 1 \u2014 Page 1).",
+          "best_label": "entailment",
+          "entailment_score": 0.791
+        }
+      ]
+    },
+    {
+      "id": "q27",
+      "question": "Are there any exceptions to what counts as confidential information under this NDA?",
+      "expected": "answerable",
+      "answer": "Yes, there are exceptions to what counts as confidential information under this NDA. According to Clause 2, Receiving Party's obligations do not extend to information that satisfies one of the following conditions: (a) publicly known; (b) discovered by Receiving Party before disclosure; (c) learned through legitimate means other than from Disclosing Party; or (d) disclosed by Receiving Party with Disclosing Party's prior written approval. (Page 1).",
+      "total_sentences": 2,
+      "supported": 2,
+      "hallucinated": 0,
+      "skipped_hedges": 0,
+      "detail": [
+        {
+          "sentence": "Yes, there are exceptions to what counts as confidential information under this NDA.",
+          "best_label": "entailment",
+          "entailment_score": 0.496
+        },
+        {
+          "sentence": "According to Clause 2, Receiving Party's obligations do not extend to information that satisfies one of the following conditions: (a) publicly known; (b) discovered by Receiving Party before disclosure; (c) learned through legitimate means other than from Disclosing Party; or (d) disclosed by Receiving Party with Disclosing Party's prior written approval.",
+          "best_label": "entailment",
+          "entailment_score": 0.898
+        }
+      ]
+    },
+    {
+      "id": "q28",
+      "question": "What happens to the nondisclosure obligations after the agreement ends?",
+      "expected": "answerable",
+      "answer": "The nondisclosure provisions of this Agreement shall survive the termination of this Agreement (Page 1, Clause 1). The Receiving Party's duty to hold Confidential Information in confidence shall remain in effect until the Confidential Information no longer qualifies as a trade secret or until Disclosing Party sends Receiving Party written notice releasing Receiving Party from this Agreement, whichever occurs first (Page 1, Clause 1).",
+      "total_sentences": 2,
+      "supported": 0,
+      "hallucinated": 2,
+      "skipped_hedges": 0,
+      "detail": [
+        {
+          "sentence": "The nondisclosure provisions of this Agreement shall survive the termination of this Agreement (Page 1, Clause 1).",
+          "best_label": "neutral",
+          "entailment_score": 0.153
+        },
+        {
+          "sentence": "The Receiving Party's duty to hold Confidential Information in confidence shall remain in effect until the Confidential Information no longer qualifies as a trade secret or until Disclosing Party sends Receiving Party written notice releasing Receiving Party from this Agreement, whichever occurs first (Page 1, Clause 1).",
+          "best_label": "contradiction",
+          "entailment_score": 0.145
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "question": "Does this contract require arbitration to resolve disputes?",
+      "expected": "unanswerable",
+      "answer": "There is no provision in the contract regarding arbitration to resolve disputes. The provided clauses do not contain any information about dispute resolution mechanisms.\n\n(Citations not provided since there is no relevant information in the given clauses.)",
+      "correctly_declined": false
+    },
+    {
+      "id": "q10",
+      "question": "What audit rights does either party have under this agreement?",
+      "expected": "unanswerable",
+      "answer": "Based on the provided clauses, I do not find any specific audit rights granted to either party to inspect each other's records, systems, or facilities to ensure compliance with the terms of the agreement. Therefore, I cannot determine the audit rights of either party under this agreement.",
+      "correctly_declined": true
+    },
+    {
+      "id": "q11",
+      "question": "Does this agreement include an exclusivity clause?",
+      "expected": "unanswerable",
+      "answer": "No, this agreement does not include an exclusivity clause. The text provided does not mention any obligation on either party to not work with others or to provide exclusive services.",
+      "correctly_declined": true
+    },
+    {
+      "id": "q12",
+      "question": "What license is granted under this agreement, and to what intellectual property?",
+      "expected": "unanswerable",
+      "answer": "No license is granted under this agreement. The contract focuses on confidentiality and nondisclosure rather than intellectual property licensing.",
+      "correctly_declined": false
+    },
+    {
+      "id": "q13",
+      "question": "Does this contract mention any insurance requirements?",
+      "expected": "unanswerable",
+      "answer": "No, this contract does not mention any insurance requirements. There is no clause that addresses insurance.",
+      "correctly_declined": true
+    },
+    {
+      "id": "q14",
+      "question": "Is there a revenue or profit sharing arrangement described in this agreement?",
+      "expected": "unanswerable",
+      "answer": "No, there is no revenue or profit sharing arrangement described in this agreement. (Page 3 is referenced in the context but was not provided here) However, it is explicitly stated in Clause 1 that the parties are not in a partner or joint venture relationship (Page 2).",
+      "correctly_declined": false
+    },
+    {
+      "id": "q15",
+      "question": "Is there a minimum purchase or minimum commitment amount specified?",
+      "expected": "unanswerable",
+      "answer": "No, there is no minimum purchase or minimum commitment amount specified in the provided clauses. The clauses mainly pertain to confidentiality, obligation, nondisclosure, and termination. (No explicit clause.)",
+      "correctly_declined": false
+    },
+    {
+      "id": "q16",
+      "question": "Does either party have a right of first refusal under this agreement?",
+      "expected": "unanswerable",
+      "answer": "This agreement does not mention a right of first refusal. The clause regarding the nondisclosure of Confidential Information does not imply a right of first refusal, nor does the obligation of the Receiving Party or the relationship between the parties constitute a right of first refusal (Page 2, Clause 1; Page 1, Clause 3,4).",
+      "correctly_declined": true
+    },
+    {
+      "id": "q17",
+      "question": "Who owns intellectual property created in connection with this agreement?",
+      "expected": "unanswerable",
+      "answer": "Unfortunately, the provided clauses do not contain explicit information regarding the ownership of intellectual property created in connection with this agreement.",
+      "correctly_declined": false
+    },
+    {
+      "id": "q18",
+      "question": "Is there a cap or limitation on liability in this agreement?",
+      "expected": "unanswerable",
+      "answer": "There is no explicit language regarding liability caps or limitations in the provided contract clauses.",
+      "correctly_declined": false
+    },
+    {
+      "id": "q19",
+      "question": "Does this agreement specify any services owed after termination?",
+      "expected": "unanswerable",
+      "answer": "No, this agreement does not specify any services owed after termination.",
+      "correctly_declined": true
+    },
+    {
+      "id": "q20",
+      "question": "Does this agreement state a fixed expiration date?",
+      "expected": "unanswerable",
+      "answer": "No, this agreement does not state a fixed expiration date for the nondisclosure provisions. (Page 1, Clause 1)",
+      "correctly_declined": false
+    },
+    {
+      "id": "q29",
+      "question": "What payment or compensation amount is specified in this agreement?",
+      "expected": "unanswerable",
+      "answer": "There is no information provided in the given contract clauses regarding a payment or compensation amount.",
+      "correctly_declined": true
+    },
+    {
+      "id": "q30",
+      "question": "Does this agreement include a non-compete clause?",
+      "expected": "unanswerable",
+      "answer": "No, this agreement does not appear to include a non-compete clause. The provided clauses do not contain any language related to competition, competing business activities, or preventing Receiving Party from engaging in similar work or business.",
+      "correctly_declined": true
+    },
+    {
+      "id": "q31",
+      "question": "What is the warranty period described in this agreement?",
+      "expected": "unanswerable",
+      "answer": "The warranty period is not described in any of the provided clauses. This agreement does not appear to contain any warranty provisions, but rather focuses on confidentiality and nondisclosure obligations.",
+      "correctly_declined": true
+    },
+    {
+      "id": "q32",
+      "question": "Does this contract specify a currency for any payments?",
+      "expected": "unanswerable",
+      "answer": "There is no information provided in the contract clauses to answer this question.",
+      "correctly_declined": true
+    },
+    {
+      "id": "q33",
+      "question": "Is there a data breach notification requirement in this agreement?",
+      "expected": "unanswerable",
+      "answer": "There is no data breach notification requirement in this agreement. Clause 2 addresses what happens after termination or if the information no longer qualifies as a trade secret, but it does not mention any data breach notification obligation.",
+      "correctly_declined": true
+    },
+    {
+      "id": "q34",
+      "question": "Does this agreement mention any performance benchmarks or SLAs?",
+      "expected": "unanswerable",
+      "answer": "No, this agreement does not mention any performance benchmarks or SLAs (Page 2).",
+      "correctly_declined": true
+    },
+    {
+      "id": "q35",
+      "question": "What is the renewal process described in this agreement?",
+      "expected": "unanswerable",
+      "answer": "The provided clauses do not mention a renewal process. In other words, there is no explicit renewal process described in this agreement.",
+      "correctly_declined": true
+    },
+    {
+      "id": "q36",
+      "question": "Does this agreement specify a dispute resolution venue or jurisdiction for lawsuits?",
+      "expected": "unanswerable",
+      "answer": "This agreement does not specify a dispute resolution venue or jurisdiction for lawsuits.",
+      "correctly_declined": true
+    }
+  ]
+}
